@@ -1,0 +1,740 @@
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================================
+   LOGIN PAGE
+   ========================================================= */
+
+.login-page {
+
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("background.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+
+
+/* =========================================================
+   LOGIN CONTAINER
+   ========================================================= */
+
+.login-container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+}
+
+
+/* =========================================================
+   LOGIN CARD
+   ========================================================= */
+
+.login-card {
+
+    width: 380px;
+
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35);
+
+}
+
+
+/* =========================================================
+   LOGIN HEADINGS
+   ========================================================= */
+
+.login-card h1 {
+
+    margin-top: 0;
+
+    margin-bottom: 8px;
+
+    text-align: center;
+
+    color: #1f2937;
+
+}
+
+
+.login-card h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    color: #2563eb;
+
+}
+
+
+/* =========================================================
+   LOGIN LABELS
+   ========================================================= */
+
+.login-card label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    color: #374151;
+
+}
+
+
+/* =========================================================
+   LOGIN INPUTS
+   ========================================================= */
+
+.login-card input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+}
+
+
+.login-card input:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.15);
+
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+   ========================================================= */
+
+.login-card button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.login-card button:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+/* =========================================================
+   LOGIN MESSAGE
+   ========================================================= */
+
+#loginMessage {
+
+    text-align: center;
+
+    margin-top: 15px;
+
+}
+
+
+/* =========================================================
+   EMPLOYEE MANAGEMENT PAGE
+   ========================================================= */
+
+body:not(.login-page) {
+
+    min-height: 100vh;
+
+    background: #f3f6fa;
+
+    color: #1f2937;
+
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 30px 0;
+
+}
+
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.container > h1 {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    color: #1f2937;
+
+}
+
+
+/* =========================================================
+   LOGOUT BUTTON
+   ========================================================= */
+
+#logoutButton {
+
+    display: block;
+
+    width: auto;
+
+    margin: 0 0 25px auto;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #dc3545;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+#logoutButton:hover {
+
+    background: #b02a37;
+
+}
+
+
+/* =========================================================
+   FORM CONTAINER
+   ========================================================= */
+
+.form-container {
+
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.form-container h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    color: #2563eb;
+
+}
+
+
+/* =========================================================
+   EMPLOYEE FORM
+   ========================================================= */
+
+#employeeForm {
+
+    width: 100%;
+
+    padding: 0;
+
+    background: transparent;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+}
+
+
+#employeeForm label {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+
+    color: #374151;
+
+}
+
+
+#employeeForm input {
+
+    width: 100%;
+
+    padding: 11px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+}
+
+
+#employeeForm input:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+
+}
+
+
+/* =========================================================
+   ADD / UPDATE BUTTON
+   ========================================================= */
+
+#submitButton {
+
+    width: auto;
+
+    padding: 11px 20px;
+
+    margin-right: 8px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+#submitButton:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+/* =========================================================
+   CANCEL BUTTON
+   ========================================================= */
+
+#cancelButton {
+
+    width: auto;
+
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #6b7280;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+}
+
+
+#cancelButton:hover {
+
+    background: #4b5563;
+
+}
+
+
+/* =========================================================
+   EMPLOYEE CONTAINER
+   ========================================================= */
+
+.employee-container {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.employee-container h2 {
+
+    margin-top: 0;
+
+    color: #2563eb;
+
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+#message {
+
+    margin: 15px 0;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+}
+
+
+#message:empty {
+
+    display: none;
+
+}
+
+
+#message.success {
+
+    background: #d1fae5;
+
+    color: #065f46;
+
+}
+
+
+#message.error {
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+}
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+#searchInput {
+
+    width: 100%;
+
+    padding: 11px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+}
+
+
+#searchInput:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+
+}
+
+
+/* =========================================================
+   EMPLOYEE TABLE
+   ========================================================= */
+
+.employee-container table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 10px;
+
+}
+
+
+.employee-container th {
+
+    padding: 12px;
+
+    text-align: left;
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+
+.employee-container td {
+
+    padding: 12px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+}
+
+
+.employee-container tbody tr:hover {
+
+    background: #f8fafc;
+
+}
+
+
+/* =========================================================
+   EDIT / DELETE BUTTONS
+   ========================================================= */
+
+.employee-container td button {
+
+    width: auto;
+
+    padding: 7px 12px;
+
+    margin-right: 5px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    color: white;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+}
+
+
+.employee-container td button:first-child {
+
+    background: #2563eb;
+
+}
+
+
+.employee-container td button:first-child:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+.employee-container td button:last-child {
+
+    background: #dc3545;
+
+}
+
+
+.employee-container td button:last-child:hover {
+
+    background: #b02a37;
+
+}
+
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+#pagination {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 6px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+
+#pagination button {
+
+    width: auto;
+
+    padding: 8px 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+#pagination button:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+#pagination button:disabled {
+
+    background: #9ca3af;
+
+    cursor: not-allowed;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .container {
+
+        width: 95%;
+
+    }
+
+
+    .login-card {
+
+        width: 100%;
+
+        max-width: 380px;
+
+        padding: 25px;
+
+    }
+
+
+    .employee-container {
+
+        overflow-x: auto;
+
+    }
+
+
+    .employee-container table {
+
+        min-width: 700px;
+
+    }
+
+}
