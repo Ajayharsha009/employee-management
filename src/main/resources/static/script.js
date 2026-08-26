@@ -167,7 +167,7 @@ function showMessage(text, type) {
 function loadEmployees() {
 
     fetch(
-        "http://localhost:8080/employees",
+        "/employees",
         {
 
             headers: {
@@ -629,7 +629,7 @@ function deleteEmployee(id) {
 
 
     fetch(
-        `http://localhost:8080/employees/${id}`,
+        `/employees/${id}`,
         {
 
             method: "DELETE",
@@ -833,7 +833,7 @@ employeeForm.addEventListener(
         // ==============================
 
         let url =
-            "http://localhost:8080/employees";
+            "/employees";
 
         let method =
             "POST";
@@ -844,7 +844,7 @@ employeeForm.addEventListener(
         ) {
 
             url =
-                `http://localhost:8080/employees/${editingEmployeeId}`;
+                `/employees/${editingEmployeeId}`;
 
             method =
                 "PUT";
