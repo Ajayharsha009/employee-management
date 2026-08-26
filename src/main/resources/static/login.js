@@ -29,7 +29,7 @@ loginForm.addEventListener("submit", function(event) {
     // Send login request
     // ==============================
 
-    fetch("http://localhost:8080/auth/login", {
+    fetch("/auth/login", {
 
         method: "POST",
 
