@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import java.nio.charset.StandardCharsets;
 
 @Service
 public class JwtService {
@@ -27,7 +27,7 @@ public class JwtService {
 
     private SecretKey getSigningKey() {
 
-        byte[] keyBytes = Decoders.BASE64.decode(secret);
+        byte[] keyBytes = secret.getBytes(StandardCharsets.UTF_8);
 
         return Keys.hmacShaKeyFor(keyBytes);
     }
