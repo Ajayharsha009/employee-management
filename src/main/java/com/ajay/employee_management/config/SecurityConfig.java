@@ -81,7 +81,8 @@ public class SecurityConfig {
 
         configuration.setAllowedOrigins(List.of(
                 "http://127.0.0.1:5500",
-                "http://localhost:5500"
+                "http://localhost:5500",
+                "https://employee-management-production-1a07.up.railway.app"
         ));
 
         configuration.setAllowedMethods(List.of(
